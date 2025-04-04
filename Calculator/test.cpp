@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Calculator.h"
-#include "Calculator.cpp"
+#include "AdvancMath.h"
 
 using namespace std;
 
@@ -69,7 +69,7 @@ int main()
     }
     else if (calculation == 'r')
     {
-        cout << randomNumber(num1, num2) << endl;
+        cout << random_in_range(num1, num2) << endl;
     }
     else
     {
