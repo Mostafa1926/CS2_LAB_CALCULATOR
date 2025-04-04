@@ -1,3 +1,3 @@
-/home/mohammad1789/CS 2 Lab/Assignments/Calculator/mybuild/CMakeFiles/CalcTest.dir
-/home/mohammad1789/CS 2 Lab/Assignments/Calculator/mybuild/CMakeFiles/edit_cache.dir
-/home/mohammad1789/CS 2 Lab/Assignments/Calculator/mybuild/CMakeFiles/rebuild_cache.dir
+/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/mybuild/CMakeFiles/CalcTest.dir
+/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/mybuild/CMakeFiles/edit_cache.dir
+/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/mybuild/CMakeFiles/rebuild_cache.dir

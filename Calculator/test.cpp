@@ -1,81 +1,65 @@
 #include <iostream>
-#include <string>
 #include "Calculator.h"
 #include "AdvancMath.h"
-
+#include "evaluator.h"
 using namespace std;
 
-int main()
-{
-    char calculation;
-    double num1, num2;
+int main() {
+    while(true){
+        cout << "1. Call GCD (48, 18)" << endl;
+        cout << "2. Call LCM (12, 15)" << endl;
+        cout << "3. Call Random Number" << endl;
+        cout << "4. Call Expression Evaluator (10 + 2 * ( 6 - 4 ))" << endl;
+        cout << "5. Calculate Factorial" << endl;
+        cout << "6. Input Your Own Operation" << endl;
+        cout << "7. Exit" << endl;
+        cout << "Choice: ";
+        
+        int choice;
+        cin >> choice;
 
-    cout << "Enter your calculation (e.g., 5+3): ";
-    cin >> num1 >> calculation;
-    if (calculation == '!')
-        num2 = 0;
-    else
-        cin >> num2;
-    // for (int i = 0; i < calculation.size(); i++)
-    // {
-    // int last = 0;
-    // if (calculation[i] == '+' || calculation[i] == '-' || calculation[i] == '*' || calculation[i] == '/' || calculation[i] == 'g' || calculation[i] == 'l' || calculation[i] == 'r')
-    // {
-    //     foundOp = calculation[i];
-    //     str1 = calculation[i - 1] - '0';
-    //     str2 = calculation[i + 1] - '0';
-    // }
-    // else if (calculation[i] == '!')
-    // {
-    //     foundOp = calculation[i];
-    //     str1 = calculation[i - 1] - '0';
-    // }
+        if (choice == 1) {
+            cout << "GCD: " << GCD(48, 18) << endl;
+        }
+        else if (choice == 2) {
+            cout << "LCM: " << LCM(12, 15) << endl;
+        }
+        else if (choice == 3) {
+            cout << "Random: " << random(1,1000) << endl;
+        }
+        else if (choice == 4) {
+            string expr = "10 + 2 * ( 6 - 4 )";
+            string post = convert(expr);
+            int result = evaluate(post);
+            cout << "Postfix: " << post << endl;
+            cout << "Result: " << result << endl;
+        }
+        else if (choice == 5) {
+            cout << "Enter a number to calculate factorial: ";
+            int num;
+            cin >> num;
+            cout << "Factorial of " << num << " is: " << factorial(num) << endl; 
+        }
+        else if (choice == 6) {
+            cout << "Enter a mathematical expression: ";
+            string Input;
+            cin.ignore();
+            getline(cin, Input); 
+            
+            string postfix = convert(Input);
+            int result = evaluate(postfix);
+            cout << "Postfix Expression: " << postfix << endl;
+            cout << "Result: " << result << endl;
+        }
+        else if (choice == 7) {
+            break;
+        }
+        else {
+            cout << "Invalid choice\n";
+        }
 
-    // str1 += calculation[i];
-    // str2 += calculation[i];
-
-    if (calculation == '+')
-    {
-        cout << add(num1, num2) << endl;
+        cout << endl;
     }
-    else if (calculation == '-')
-    {
-
-        cout << subtract(num1, num2) << endl;
-    }
-    else if (calculation == '*')
-    {
-
-        cout << multiply(num1, num2) << endl;
-    }
-    else if (calculation == '/')
-    {
-
-        cout << divide(num1, num2) << endl;
-    }
-    else if (calculation == '!')
-    {
-
-        cout << factorial(num1) << endl;
-    }
-    else if (calculation == 'g')
-    {
-
-        cout << GCD(num1, num2) << endl;
-    }
-    else if (calculation == 'l')
-    {
-        cout << LCM(num1, num2) << endl;
-    }
-    else if (calculation == 'r')
-    {
-        cout << random_in_range(num1, num2) << endl;
-    }
-    else
-    {
-        cout << "Invalid operation" << endl;
-    }
-    //}
 
     return 0;
 }

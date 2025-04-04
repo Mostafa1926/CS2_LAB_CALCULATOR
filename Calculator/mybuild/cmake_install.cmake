@@ -1,4 +1,4 @@
-# Install script for directory: /home/mohammad1789/CS 2 Lab/Assignments/Calculator
+# Install script for directory: /home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mohammad1789/CS 2 Lab/Assignments/Calculator/mybuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/mybuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

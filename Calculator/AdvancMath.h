@@ -24,8 +24,8 @@ int LCM(int a, int b) {
     return (a / GCD(a, b)) * b;
 }
 
-double random_in_range(int min, int max) {
-    srand(time(0));  // Seed the random number generator
+double random(int min, int max) {
+    srand(time(0)); 
     return rand() % (max - min + 1) + min;
 }
 

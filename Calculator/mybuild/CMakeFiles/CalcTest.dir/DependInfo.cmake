@@ -8,16 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mohammad1789/CS 2 Lab/Assignments/Calculator/Calculator.cpp" "CMakeFiles/CalcTest.dir/Calculator.cpp.o" "gcc" "CMakeFiles/CalcTest.dir/Calculator.cpp.o.d"
-  "/home/mohammad1789/CS 2 Lab/Assignments/Calculator/test.cpp" "CMakeFiles/CalcTest.dir/test.cpp.o" "gcc" "CMakeFiles/CalcTest.dir/test.cpp.o.d"
+  "/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/Calculator.cpp" "CMakeFiles/CalcTest.dir/Calculator.cpp.o" "gcc" "CMakeFiles/CalcTest.dir/Calculator.cpp.o.d"
+  "/home/mostafa_mohamed/Desktop/CS2_Calculator/Calculator/test.cpp" "CMakeFiles/CalcTest.dir/test.cpp.o" "gcc" "CMakeFiles/CalcTest.dir/test.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
